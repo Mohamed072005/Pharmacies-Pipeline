@@ -1,0 +1,14 @@
+PUT http://localhost:3000/profiles/67372028031c8c9a26219799
+Content-Type: application/json
+
+{
+  "bio": "I am a software engineer",
+  "avatar": "https://example.com/avatar.png"
+}
+
+PUT http://localhost:3000/profiles/67372028031c8c9a26219799/block
+Content-Type: application/json
+
+{
+  "isBlocked": true
+}

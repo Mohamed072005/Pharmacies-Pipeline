@@ -1,0 +1,7 @@
+GET http://localhost:3000/users/username
+?username=youss
+GET http://localhost:3000/users/email?email=hassan@example.com
+
+GET http://localhost:3000/users/67372028031c8c9a26219799
+
+GET http://localhost:3000/users
