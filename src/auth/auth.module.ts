@@ -14,7 +14,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     JwtModule.registerAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
-        secret: configService.get<string>('JWT_SECRET'),
+        secret: "6421587451278t6ufgvcjsvutgvgefwvewrfw7ft6w7",
         signOptions: { expiresIn: '1h' },
       }),
       inject: [ConfigService],
