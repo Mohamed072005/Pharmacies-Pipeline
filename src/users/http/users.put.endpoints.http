@@ -1,0 +1,15 @@
+PUT http://localhost:3000/users/67372028031c8c9a26219799
+Content-Type: application/json
+
+{
+  "username": "mohammed",
+  "email": "mohammed@example.com",
+  "password": "Password123!"
+}
+
+PUT http://localhost:3000/users/67372028031c8c9a26219799/status
+Content-Type: application/json
+
+{
+  "isOnline": true
+}
