@@ -3,7 +3,7 @@ import { CreateFavoritePharmacyDTO } from "./dto/create.favorite.pharmacy.dto";
 import { CreateFavoritePharmacyResponseDTO } from "./dto/create.favorite.pharmacy.response.dto";
 import mongoose from "mongoose";
 import { FavoritePharmacyServiceInterface } from "./interfaces/favorite_pharmacy.service.interface";
-import { ObjectIdTransformer } from "src/common/transformers/object_id.transformer";
+import { ObjectIdTransformer } from "../common/transformers/object_id.transformer";
 
 @Controller('favorite')
 export class FavoritePharmacyController {

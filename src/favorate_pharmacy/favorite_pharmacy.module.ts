@@ -4,7 +4,7 @@ import { FavoritePharmacy, FavoritePharmacySchema } from './favorite_pharnacy.sc
 import { FavoritePharmacyController } from './favorite_pharnacy.controller';
 import { FavoritePharmacyService } from './favorite_pharnacy.service';
 import { FavoritePharmacyRepository } from './favorite_pharnacy.repository';
-import { PharmaciesModule } from 'src/pharmacies/pharmacies.module';
+import { PharmaciesModule } from '../pharmacies/pharmacies.module';
 
 @Module({
     imports: [

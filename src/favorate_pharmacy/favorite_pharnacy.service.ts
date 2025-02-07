@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Inject, Injectable } from "@nestjs/common";
 import { CreateFavoritePharmacyDTO } from "./dto/create.favorite.pharmacy.dto";
 import { FavoritePharmacyRepositoryInterface } from "./interfaces/favorite_pharmacy.repository.interface";
 import { FavoritePharmacyEntity } from "./interfaces/favorite.pharmacy.entity";
-import { PharmaciesService } from "src/pharmacies/pharmacies.service";
+import { PharmaciesService } from "../pharmacies/pharmacies.service";
 import { Types } from "mongoose";
 import { FavoritePharmacyServiceInterface } from "./interfaces/favorite_pharmacy.service.interface";
 

@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Param, Put, Delete, Query, HttpException, 
 import { PharmaciesService } from './pharmacies.service';
 import { Pharmacy } from './schemas/pharmacy.schema';
 import { Types } from 'mongoose';
-import { ObjectIdTransformer } from 'src/common/transformers/object_id.transformer';
+import { ObjectIdTransformer } from '../common/transformers/object_id.transformer';
 
 @Controller('pharmacies')
 export class PharmaciesController {
