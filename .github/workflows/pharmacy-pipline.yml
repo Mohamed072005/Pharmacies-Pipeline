@@ -27,3 +27,18 @@ jobs:
       - name: Run tests
         working-directory: ./
         run: npm run test
+  deploy:
+    needs: test-backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ec2-user
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ec2-user/Pharmacies-Pipeline
+            git pull origin main
+            npm install
